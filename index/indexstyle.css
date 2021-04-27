@@ -1,0 +1,113 @@
+:root{
+    --navy: #002d5f;
+    --blue: #406ab6;
+    --green: #30a46e;
+    --white: #fff;
+    --open-sans: 'Open Sans', sans-serif;
+    --archivo: 'Archivo', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.title-container{
+    background-color: var(--navy);
+    font-family: var(--archivo);
+    font-size: 35pt;
+    color: var(--white);
+    display: grid;
+    grid-template-rows: 150px;
+    grid-template-columns: 450px;
+    grid-template-areas: 
+        "title-logo title-text";
+    align-items: center;
+    
+}
+.title-logo{
+    max-height: 150px;
+    width: 375px;
+    grid-area: title-logo;
+}
+
+.title-text{
+    grid-area: title-text;
+}
+
+.desc {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 11px;
+    width: 95%;
+    background-color: var(--white);
+    font-family: var(--open-sans);
+    font-size: 15pt;
+    color: var(--navy);
+}
+
+.cards-container {
+    display: grid;
+    grid-template-rows: repeat(2, 205px);
+    grid-template-columns: repeat(3, 305px);
+    grid-template-areas: "banking broadcast compsci"
+                         "engineering design med";
+    margin: auto;
+    width: 72%;
+}
+
+.cards {
+    margin: 5px;
+}
+
+.banking{
+    grid-area: banking;
+}
+
+.broadcast{
+    grid-area: broadcast;
+}
+
+.compsci{
+    grid-area: compsci;
+}
+
+.engineering{
+    grid-area: engineering;
+}
+
+.graphic-design{
+    grid-area: design;
+}
+
+.physical-med{
+    grid-area: med;
+}
+
+.cards img {
+    height: 195px;
+    margin-bottom: 5px;
+    width: 295px;
+}
+
+.label {
+    background-color: var(--green);
+    color: var(--white);
+    position: relative;
+    top: -39px;
+    height: 30px;
+    align-self: end;
+    z-index: 1;
+    font-family: var(--open-sans);
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}

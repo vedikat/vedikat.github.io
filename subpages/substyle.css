@@ -1,0 +1,133 @@
+:root{
+    --navy: #002d5f;
+    --blue: #406ab6;
+    --green: #30a46e;
+    --white: #fff;
+    --open-sans: 'Open Sans', sans-serif;
+    --archivo: 'Archivo', sans-serif;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 140px auto;
+    /* grid-template-rows: ; */
+    grid-template-areas: 
+        "heading heading"
+        "navigation content"
+    ;
+}
+.heading{
+    grid-area: heading;
+    background-color: var(--navy);
+    font-family: var(--archivo);
+    font-size: 35pt;
+    color: var(--white);
+    display: grid;
+    grid-template-rows: 150px;
+    grid-template-columns: 450px;
+    grid-template-areas: 
+        "logo walton";
+    align-items: center;
+    
+}
+.logo{
+    max-height: 150px;
+    width: 375px;
+    grid-area: logo;
+}
+.walton{
+    grid-area: walton;
+}
+.navigation{
+    grid-area: navigation;
+    background-color: var(--green);
+    color: var(--white);
+    font-family: var(--open-sans);
+    font-weight: 600;
+    font-size: 11pt;
+    text-align: center;
+    
+}
+.navButton{
+    padding: 20px;
+}
+.content{
+    grid-area: content;
+    background-color: var(--white);
+    font-family: var(--open-sans);
+    font-size: 13pt;
+    color: var(--navy);
+    margin-top: 10px;
+}
+.header{
+    background: linear-gradient(to right,var(--navy) 0%, var(--white) 100%);
+    color: var(--white);
+    font-weight: 1000;
+    padding: 8px;
+}
+.information{
+    margin: 20px;
+}
+.desc{
+    font-size: 12pt;
+}
+.instructor{
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-areas: 
+        "profile name"
+        "profile contact"
+    ;
+}
+.profile{
+    max-width: 100px;
+    grid-area: profile;
+}
+.instructorName{
+    margin-left: 5px;
+    grid-area: name;
+}
+.instructorContact{
+    margin-left: 5px;
+    position: relative;
+    top: -23px;
+    grid-area: contact;
+}
+.class{
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 24px auto;
+    grid-template-areas: 
+        "plus className"
+    ;
+    font-weight: 600;
+}
+.plus{
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: bold;
+    font-size: 20pt;
+    text-align: center;
+    justify-content: center;
+    line-height: 24px;
+    margin-bottom: 8px;
+    
+}
+.className{
+    text-decoration: underline;
+    margin-left: 5px;
+    margin-bottom: 8px;
+}
+.details{
+    display: none;
+    font-size: 12pt;
+    font-weight: 400;
+    margin-left: 34px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
