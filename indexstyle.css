@@ -56,7 +56,7 @@ body {
     grid-template-areas: "banking broadcast compsci"
                          "engineering design med";
     margin: auto;
-    align-content: center;
+    justify-content: center;
     width: 72%;
 }
 
