@@ -119,6 +119,11 @@ body{
     margin-left: 5px;
     margin-bottom: 8px;
 }
+
+.className:hover {
+    cursor: pointer;
+}
+
 .details{
     display: none;
     font-size: 12pt;
