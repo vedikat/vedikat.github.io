@@ -3,6 +3,9 @@
     --blue: #406ab6;
     --green: #30a46e;
     --white: #fff;
+    --offwhite: #f7f7f7;
+    --whitehousebrown: #cf4e2d;
+    --waltonred: #bf200b;
     --open-sans: 'Open Sans', sans-serif;
     --archivo: 'Archivo', sans-serif;
 }
@@ -16,28 +19,45 @@ body {
 }
 
 .title-container{
-    background-color: var(--navy);
+    background-color: var(--offwhite);
     font-family: var(--archivo);
     font-size: 35pt;
-    color: var(--white);
+    color: var(--navy);
     display: grid;
-    grid-template-rows: 150px;
-    grid-template-columns: 450px;
+    grid-template-rows: 65px;
+    grid-template-columns: 150px auto 150px;
     grid-template-areas: 
-        "title-logo title-text";
+        "title-logo title-text title-address"
+        "title-logo title-subtext title-link";
     align-items: center;
     
 }
 .title-logo{
-    max-height: 150px;
-    width: 375px;
+    max-height: 130px;
+    /* width: 375px; */
     grid-area: title-logo;
 }
 
 .title-text{
     grid-area: title-text;
+    font-weight: 600;
 }
-
+.title-subtext{
+    grid-area: title-subtext;
+    font-family: var(--open-sans);
+    font-size: 20pt;
+    font-weight: 600;
+}
+.title-address{
+    grid-area: title-address;
+    font-family: var(--open-sans);
+    font-size: 12pt;
+}
+.title-link{
+    grid-area: title-link;
+    font-family: var(--open-sans);
+    font-size: 12pt;
+}
 .desc {
     margin: auto;
     margin-top: 15px;
@@ -45,7 +65,8 @@ body {
     width: 95%;
     background-color: var(--white);
     font-family: var(--open-sans);
-    font-size: 15pt;
+    font-size: 12pt;
+    font-weight: 600;
     color: var(--navy);
 }
 
@@ -58,10 +79,15 @@ body {
     margin: auto;
     justify-content: center;
     width: 72%;
+    overflow: hidden;
 }
 
 .cards {
     margin: 5px;
+    overflow: hidden;
+    max-height: 195px;
+    background-color: var(--waltonred);
+    
 }
 
 .banking{
@@ -92,10 +118,11 @@ body {
     height: 195px;
     margin-bottom: 5px;
     width: 295px;
+    transition: all 1s ease;
 }
 
 .label {
-    background-color: var(--green);
+    background-color: var(--whitehousebrown);
     color: var(--white);
     position: relative;
     top: -39px;
@@ -104,9 +131,19 @@ body {
     z-index: 1;
     font-family: var(--open-sans);
     font-size: 18px;
+    font-weight: 600;
     text-align: center;
     line-height: 30px;
 }
+.cards:hover .label{
+    background-color: var(--waltonred);
+}
+
+.cards:hover img{
+    transform: scale(1.2);
+    opacity: 50%;
+}
+
 
 a {
     display: block;

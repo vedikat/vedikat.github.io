@@ -3,6 +3,9 @@
     --blue: #406ab6;
     --green: #30a46e;
     --white: #fff;
+    --offwhite: #f7f7f7;
+    --whitehousebrown: #a9604f;
+    --waltonred: #bf200b;
     --open-sans: 'Open Sans', sans-serif;
     --archivo: 'Archivo', sans-serif;
 }
@@ -19,25 +22,45 @@ body{
 }
 .heading{
     grid-area: heading;
-    background-color: var(--navy);
+    background-color: var(--offwhite);
     font-family: var(--archivo);
     font-size: 35pt;
-    color: var(--white);
+    color: var(--navy);
     display: grid;
-    grid-template-rows: 150px;
-    grid-template-columns: 450px;
+    grid-template-rows: 65px;
+    grid-template-columns: 150px auto 150px;
     grid-template-areas: 
-        "logo walton";
+        "logo walton title-address"
+        "logo title-subtext title-link";
     align-items: center;
     
 }
 .logo{
-    max-height: 150px;
-    width: 375px;
+    max-height: 130px;
+    /* width: 375px; */
     grid-area: logo;
 }
+
 .walton{
     grid-area: walton;
+    font-weight: 600;
+}
+.title-subtext{
+    grid-area: title-subtext;
+    font-family: var(--open-sans);
+    font-size: 20pt;
+}
+.title-address{
+    grid-area: title-address;
+    font-family: var(--open-sans);
+    font-size: 12pt;
+    
+}
+.title-link{
+    grid-area: title-link;
+    font-family: var(--open-sans);
+    font-size: 12pt;
+    
 }
 .navigation{
     grid-area: navigation;
@@ -58,7 +81,6 @@ body{
     font-family: var(--open-sans);
     font-size: 13pt;
     color: var(--navy);
-    margin-top: 10px;
 }
 .header{
     background: linear-gradient(to right,var(--navy) 0%, var(--white) 100%);
