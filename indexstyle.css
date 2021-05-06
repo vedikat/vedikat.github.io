@@ -149,3 +149,28 @@ a {
     display: block;
     text-decoration: none;
 }
+
+.title-logo {
+    position: relative;
+    left: 4px;
+}
+
+.title-text {
+    position: relative;
+    top: 9px;
+}
+
+.title-subtext {
+    position: relative;
+    bottom: 6px;
+}
+
+.title-address {
+    position: relative;
+    top: 10px;
+}
+
+.title-link {
+    position: relative;
+    bottom: 5px;
+}
