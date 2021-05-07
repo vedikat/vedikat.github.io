@@ -109,16 +109,22 @@ body{
 .profile{
     max-width: 100px;
     grid-area: profile;
+    margin-top: 8px;
+    margin-bottom: 13px;
 }
 .instructorName{
-    margin-left: 5px;
+    margin-left: 8px;
+    margin-top: 7px;
     grid-area: name;
 }
+
 .instructorContact{
-    margin-left: 5px;
+    margin-left: 8px;
+    margin-top: 7px;
     position: relative;
     top: -23px;
     grid-area: contact;
+    margin-bottom: 4px;
 }
 .class{
     margin: 5px;
@@ -203,4 +209,9 @@ a {
 
 .title-link:hover {
     text-decoration: underline;
+}
+
+.video {
+   text-align: center;
+   margin-top: 8px;
 }
