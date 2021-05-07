@@ -49,6 +49,7 @@ body{
     grid-area: title-subtext;
     font-family: var(--open-sans);
     font-size: 20pt;
+    font-weight: 600;
 }
 .title-address{
     grid-area: title-address;
@@ -172,4 +173,29 @@ a {
     display: block;
     text-decoration: none;
     color: white;
+}
+
+.logo {
+    position: relative;
+    left: 4px;
+}
+
+.walton {
+    position: relative;
+    top: 10px;
+}
+
+.title-subtext {
+    position: relative;
+    bottom: 8px;
+}
+
+.title-address {
+    position: relative;
+    top: 18px;
+}
+
+.title-link     {
+    position: relative;
+    bottom: 12px;
 }
