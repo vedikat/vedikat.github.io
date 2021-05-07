@@ -198,4 +198,9 @@ a {
 .title-link     {
     position: relative;
     bottom: 12px;
+    color: var(--navy);
+}
+
+.title-link:hover {
+    text-decoration: underline;
 }
