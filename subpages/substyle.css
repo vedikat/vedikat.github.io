@@ -175,6 +175,26 @@ body{
 .testimonial{
     font-style: italic;
 }
+.img-slider{
+    background-color: var(--offwhite);
+    max-width: 640px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 360px auto;
+    grid-template-areas:
+    "pic"
+    "cption"
+    ;
+    gap: 5px;
+}
+.img-slider img{
+    grid-area: pic
+}
+.caption{
+    grid-area: cption;
+    font-size: 9pt;
+}
 a {
     display: block;
     text-decoration: none;
