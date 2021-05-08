@@ -176,6 +176,8 @@ body{
     font-style: italic;
 }
 .img-slider{
+    margin: 0 auto;
+    align-items: center;
     background-color: var(--offwhite);
     max-width: 640px;
     overflow: hidden;
@@ -189,7 +191,7 @@ body{
     gap: 5px;
 }
 .img-slider img{
-    grid-area: pic
+    grid-area: pic;
 }
 .caption{
     grid-area: cption;
