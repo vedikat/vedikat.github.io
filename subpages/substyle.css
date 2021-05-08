@@ -180,7 +180,11 @@ a {
     text-decoration: none;
     color: white;
 }
-
+.img_slider{
+   max-width: 644px;
+   max-height: 364px; 
+   background: url(https://cdn.wallpapersafari.com/95/31/rG4sVg.jpg);
+}
 .logo {
     position: relative;
     left: 4px;
