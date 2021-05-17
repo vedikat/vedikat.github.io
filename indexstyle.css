@@ -19,7 +19,9 @@ body {
 }
 
 .title-container{
-    background-color: var(--offwhite);
+    background-image: url("img/walton.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
     font-family: var(--archivo);
     font-size: 35pt;
     color: var(--navy);
@@ -33,20 +35,29 @@ body {
     
 }
 .title-logo{
-    max-height: 130px;
-    /* width: 375px; */
+    max-height: 130px; 
     grid-area: title-logo;
+    position: relative;
+    left: 4px;
+    z-index: 3;
+    opacity: 100%;
 }
 
 .title-text{
     grid-area: title-text;
     font-weight: 600;
+    position: relative;
+    top: 10px;
 }
 .title-subtext{
     grid-area: title-subtext;
     font-family: var(--open-sans);
     font-size: 20pt;
     font-weight: 600;
+    position: relative;
+    left: 120px;
+    bottom: 8px;
+    width: fit-content;
 }
 .desc {
     margin: auto;
@@ -140,30 +151,6 @@ a {
     text-decoration: none;
 }
 
-.title-logo {
-    position: relative;
-    left: 4px;
-}
-
-.title-text {
-    position: relative;
-    top: 10px;
-}
-
-.title-subtext {
-    position: relative;
-    bottom: 8px;
-}
-
-/* .title-address {
-    position: relative;
-    top: 18px;
-} */
-
-.title-link {
-    /* position: relative;
-    bottom: 12px; */
-}
 
 .title-link:hover {
     text-decoration: underline;
